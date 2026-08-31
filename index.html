@@ -36,10 +36,7 @@
             "email": "help@homeconnector.ca",
             "openingHours": "Mo-Su 00:00-24:00",
             "telephone": "1-800-555-0199",
-            "areaServed": {
-                "@type": "Country",
-                "name": "Canada"
-            }
+            "areaServed": { "@type": "Country", "name": "Canada" }
         }
     </script>
 
@@ -117,8 +114,10 @@
         @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
 
         .reveal { animation: fadeInUp 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards; }
-        .reveal-delay-1 { animation-delay: 0.1s; } .reveal-delay-2 { animation-delay: 0.2s; }
-        .reveal-delay-3 { animation-delay: 0.3s; } .reveal-delay-4 { animation-delay: 0.4s; }
+        .reveal-delay-1 { animation-delay: 0.1s; }
+        .reveal-delay-2 { animation-delay: 0.2s; }
+        .reveal-delay-3 { animation-delay: 0.3s; }
+        .reveal-delay-4 { animation-delay: 0.4s; }
         .reveal-delay-5 { animation-delay: 0.5s; }
 
         .btn-primary { display: inline-flex; align-items: center; justify-content: center; gap: 12px; background: var(--gradient-accent); color: var(--text-inverse); padding: 18px 40px; border-radius: var(--radius-md); font-weight: 800; font-size: clamp(16px, 1.1vw, 20px); transition: all var(--transition); box-shadow: var(--shadow-btn); min-height: 56px; border: 1px solid rgba(255, 255, 255, 0.10); position: relative; overflow: hidden; }
@@ -387,6 +386,7 @@
 
     <input type="checkbox" id="mobile-menu-toggle" class="mobile-menu-toggle" aria-hidden="true" />
 
+    <!-- ========== HEADER ========== -->
     <header class="header" role="banner">
         <div class="header-inner">
             <a href="#" class="logo" aria-label="HomeConnector Home">
@@ -410,6 +410,7 @@
         </div>
     </header>
 
+    <!-- ========== MOBILE NAV ========== -->
     <nav class="mobile-nav" role="dialog" aria-modal="true" aria-label="Mobile navigation">
         <label for="mobile-menu-toggle" class="close-nav" aria-label="Close menu">
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
@@ -425,6 +426,7 @@
         <p style="color: var(--text-muted); font-size: 14px; margin-top: -8px;">Live Agents • &lt;10s wait • Licensed &amp; Insured</p>
     </nav>
 
+    <!-- ========== EMERGENCY BAR ========== -->
     <div class="emergency-bar" role="alert">
         <span class="pulse-ring" aria-hidden="true"></span>
         <span><strong>🚨 24/7 HVAC EMERGENCY DISPATCH</strong></span>
@@ -435,6 +437,7 @@
         <span class="badge-blue">IMMEDIATE</span>
     </div>
 
+    <!-- ========== HERO ========== -->
     <section class="hero" id="home" aria-labelledby="hero-title">
         <div class="hero-bg">
             <img src="https://images.unsplash.com/MdPBfiFehkA?w=1200&h=800&fit=crop&q=80" alt="HVAC technician inspecting a residential furnace and heating system" loading="eager" decoding="async" />
@@ -491,7 +494,7 @@
             </div>
             <div class="hero-img-side">
                 <div class="hero-img-card">
-                    <img src="https://images.unsplash.com/yzHyusEMYWY?w=800&h=600&fit=crop&q=80" alt="HVAC professional arriving at a residential home with service equipment" loading="lazy" decoding="async" />
+                    <img src="https://images.unsplash.com/yzHyusEMYWY?w=800&h=600&fit=crop&q=80" alt="HVAC professional performing residential maintenance with tools" loading="lazy" decoding="async" />
                 </div>
                 <div class="hero-img-caption">
                     <img class="avatar" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Emergency HVAC dispatch specialist portrait" loading="lazy" decoding="async" />
@@ -508,6 +511,7 @@
         </div>
     </section>
 
+    <!-- ========== MARQUEE ========== -->
     <div class="marquee-wrap" aria-hidden="true">
         <div class="marquee-track">
             <span class="marquee-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> 24/7 Live Emergency Line</span>
@@ -525,6 +529,7 @@
         </div>
     </div>
 
+    <!-- ========== SERVICES ========== -->
     <section class="section-pad" id="services" aria-labelledby="services-title">
         <div class="container">
             <div class="section-header reveal">
@@ -535,7 +540,7 @@
             <div class="services-grid">
                 <article class="service-card reveal reveal-delay-1">
                     <div class="img-wrap">
-                        <img src="https://images.unsplash.com/e2twQyucgbI?w=600&h=400&fit=crop&q=80" alt="HVAC technician inspecting a residential furnace and heating system" loading="lazy" decoding="async" />
+                        <img src="https://images.unsplash.com/e2twQyucgbI?w=600&h=400&fit=crop&q=80" alt="HVAC technician repairing furnace pipes and heating system" loading="lazy" decoding="async" />
                         <span class="overlay-tag">24/7 Emergency Heating</span>
                     </div>
                     <div class="service-body">
@@ -551,7 +556,7 @@
                 </article>
                 <article class="service-card reveal reveal-delay-2">
                     <div class="img-wrap">
-                        <img src="https://images.unsplash.com/ocFQ9L4w0Tk?w=600&h=400&fit=crop&q=80" alt="Outdoor air conditioning condenser unit requiring emergency summer repair" loading="lazy" decoding="async" />
+                        <img src="https://images.unsplash.com/ocFQ9L4w0Tk?w=600&h=400&fit=crop&q=80" alt="White outdoor AC condenser unit on residential building" loading="lazy" decoding="async" />
                         <span class="overlay-tag">24/7 Cooling Services</span>
                     </div>
                     <div class="service-body">
@@ -567,7 +572,7 @@
                 </article>
                 <article class="service-card reveal reveal-delay-3">
                     <div class="img-wrap">
-                        <img src="https://images.unsplash.com/GojqTg3PcOY?w=600&h=400&fit=crop&q=80" alt="Heat pump system installation and maintenance by certified HVAC professionals" loading="lazy" decoding="async" />
+                        <img src="https://images.unsplash.com/GojqTg3PcOY?w=600&h=400&fit=crop&q=80" alt="Outdoor heat pump unit mounted on residential wall" loading="lazy" decoding="async" />
                         <span class="overlay-tag">24/7 Heat Pump Service</span>
                     </div>
                     <div class="service-body">
@@ -583,7 +588,7 @@
                 </article>
                 <article class="service-card reveal reveal-delay-4">
                     <div class="img-wrap">
-                        <img src="https://images.unsplash.com/mIDu8qsXAyU?w=600&h=400&fit=crop&q=80" alt="Boiler system maintenance and repair by licensed HVAC technicians" loading="lazy" decoding="async" />
+                        <img src="https://images.unsplash.com/mIDu8qsXAyU?w=600&h=400&fit=crop&q=80" alt="Residential HVAC unit mounted on exterior wall" loading="lazy" decoding="async" />
                         <span class="overlay-tag">24/7 Boiler Services</span>
                     </div>
                     <div class="service-body">
@@ -599,7 +604,7 @@
                 </article>
                 <article class="service-card reveal reveal-delay-5">
                     <div class="img-wrap">
-                        <img src="https://images.unsplash.com/VuRql-uCgTM?w=600&h=400&fit=crop&q=80" alt="HVAC technician performing professional duct cleaning and air quality inspection" loading="lazy" decoding="async" />
+                        <img src="https://images.unsplash.com/VuRql-uCgTM?w=600&h=400&fit=crop&q=80" alt="Technician performing AC filter cleaning and HVAC maintenance" loading="lazy" decoding="async" />
                         <span class="overlay-tag">24/7 Air Quality</span>
                     </div>
                     <div class="service-body">
@@ -615,7 +620,7 @@
                 </article>
                 <article class="service-card reveal reveal-delay-5">
                     <div class="img-wrap">
-                        <img src="https://images.unsplash.com/ARzmMjwiMrc?w=600&h=400&fit=crop&q=80" alt="HVAC professional reviewing preventative maintenance checklist for residential system" loading="lazy" decoding="async" />
+                        <img src="https://images.unsplash.com/ARzmMjwiMrc?w=600&h=400&fit=crop&q=80" alt="Professional using hand tools for HVAC system repair" loading="lazy" decoding="async" />
                         <span class="overlay-tag">24/7 Preventative Care</span>
                     </div>
                     <div class="service-body">
@@ -633,6 +638,7 @@
         </div>
     </section>
 
+    <!-- ========== HOW IT WORKS ========== -->
     <section class="section-pad" id="how" aria-labelledby="how-title">
         <div class="container">
             <div class="section-header reveal">
@@ -665,6 +671,7 @@
         </div>
     </section>
 
+    <!-- ========== STATS ========== -->
     <section class="section-pad" id="stats" aria-labelledby="stats-title">
         <div class="container">
             <div class="section-header reveal">
@@ -693,10 +700,11 @@
         </div>
     </section>
 
+    <!-- ========== NETWORK ========== -->
     <section class="section-pad" id="network" aria-labelledby="network-title">
         <div class="container network-inner">
             <div class="network-img reveal">
-                <img src="https://images.unsplash.com/thIufsr8kwg?w=800&h=600&fit=crop&q=80" alt="Multiple HVAC units representing our nationwide service network" loading="lazy" decoding="async" />
+                <img src="https://images.unsplash.com/thIufsr8kwg?w=800&h=600&fit=crop&q=80" alt="Row of commercial HVAC units representing our nationwide service network" loading="lazy" decoding="async" />
             </div>
             <div class="network-content reveal">
                 <span class="section-label" style="text-align:left;">Our Network</span>
@@ -725,6 +733,7 @@
         </div>
     </section>
 
+    <!-- ========== COVERAGE ========== -->
     <section class="section-pad" id="coverage" aria-labelledby="coverage-title">
         <div class="container">
             <div class="section-header reveal">
@@ -733,7 +742,7 @@
                 <p>We prioritize high-demand regions where HVAC emergencies hit hardest. Our network reaches you wherever comfort is compromised.</p>
             </div>
             <div class="coverage-img reveal">
-                <img src="https://images.unsplash.com/I_v6T6k4Xxk?w=1200&h=500&fit=crop&q=80" alt="HVAC service coverage across Canadian residential neighborhoods" loading="lazy" decoding="async" />
+                <img src="https://images.unsplash.com/I_v6T6k4Xxk?w=1200&h=500&fit=crop&q=80" alt="HVAC units on Canadian residential buildings" loading="lazy" decoding="async" />
                 <div class="coverage-overlay">
                     <span class="tag">🇨🇦 <strong>Nationwide</strong> · 24/7/365</span>
                     <span class="tag">📞 <span class="hl">1-800-555-0199</span></span>
@@ -836,6 +845,7 @@
         </div>
     </section>
 
+    <!-- ========== TESTIMONIALS ========== -->
     <section class="section-pad" id="testimonials" aria-labelledby="testimonials-title">
         <div class="container">
             <div class="section-header reveal">
@@ -882,6 +892,7 @@
         </div>
     </section>
 
+    <!-- ========== FAQ ========== -->
     <section class="section-pad" id="faq" aria-labelledby="faq-title">
         <div class="container">
             <div class="section-header reveal">
@@ -984,9 +995,10 @@
         </div>
     </section>
 
+    <!-- ========== CTA ========== -->
     <section class="cta-section" aria-labelledby="cta-title">
         <div class="cta-bg">
-            <img src="https://images.unsplash.com/JUAVCUMY008?w=1600&h=900&fit=crop&q=80" alt="HVAC service fleet ready for nationwide emergency dispatch" loading="lazy" decoding="async" />
+            <img src="https://images.unsplash.com/JUAVCUMY008?w=1600&h=900&fit=crop&q=80" alt="Multiple HVAC units ready for emergency dispatch nationwide" loading="lazy" decoding="async" />
         </div>
         <div class="cta-overlay"></div>
         <div class="cta-inner reveal">
@@ -1001,6 +1013,7 @@
         </div>
     </section>
 
+    <!-- ========== FOOTER ========== -->
     <footer class="footer" role="contentinfo">
         <div class="footer-inner">
             <div class="footer-brand">
@@ -1021,6 +1034,7 @@
         </div>
     </footer>
 
+    <!-- ========== FLOATING BAR ========== -->
     <div class="floating-bar" id="floatingBar" role="complementary" aria-label="Emergency call bar">
         <div class="info">
             <span class="dot" aria-hidden="true"></span>
